@@ -1,50 +1,28 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather',serif;
+  font-family: 'Merriweather', serif;
 }
-
-h1 {
-  margin-top: 0;
-  font-family: 'Sacramento', cursive;
-}
-h2{
-  font-family: 'Montserrat',sans-serif;
-}
-h3{
-  font-family: 'Montserrat',sans-serif;
-}
-img{
+img {
   width: 40%;
 }
-.logo{
-hight: 400%;
-width: 200%;
+
+.logo {
+  hight: 400%;
+  width: 200%;
 }
-.navbar-nav{
+
+.navbar-nav {
   margin-left: 90%;
   font-family: cursive;
 }
-.navbar{
+
+.navbar {
   background-color: #E9EFC0;
 }
-.nav-link{
-  color: #F9EBC8;
-}
-.top-container{
+
+.top-container {
   background-color: #E9EFC0;
   position: relative;
   padding-top: 100px;
-}
-
-.topCloud {
-  position: absolute;
-  right: 250px;
-  top: 50px;
-}
-
-.bottomCloud {
-  position: absolute;
-  top: 200px;
-  left: 250px;
 }
