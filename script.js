@@ -17,7 +17,6 @@ const renderService = (services) => {
              <div class="card-body">
                  <h5 class="card-title">${service.name}</h5>
                  <button type="button" class="btn delete" onclick="deleteService(${service.id})">Delete</button>
-                 <button type="button" class="btn edit" onclick="editServices()">Edit</button>
              </div>
          </div>`;
   });

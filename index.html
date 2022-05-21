@@ -21,80 +21,81 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
           <li class="nav-item">
-          <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">ADD</button>
+            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">ADD</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="service-id" class="col-form-label">Service id:</label>
+                        <input type="text" class="form-control" id="service-id">
+                      </div>
+                      <div class="mb-3">
+                        <label for="service-name" class="col-form-label">Service name:</label>
+                        <input type="text" class="form-control" id="service-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="service-price" class="col-form-label">Service price:</label>
+                        <input type="text" class="form-control" id="service-price">
+                      </div>
+                      <div class="mb-3">
+                        <label for="service-image" class="col-form-label">Service image:</label>
+                        <input type="text" class="form-control" id="service-image">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addService()">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
+            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">EDIT</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="service-id" class="col-form-label">Service id:</label>
+                        <input type="text" class="form-control" id="service-i">
+                      </div>
+                      <div class="mb-3">
+                        <label for="service-name" class="col-form-label">Service name:</label>
+                        <input type="text" class="form-control" id="service-n">
+                      </div>
+                      <div class="mb-3">
+                        <label for="service-price" class="col-form-label">Service price:</label>
+                        <input type="text" class="form-control" id="service-p">
+                      </div>
+                      <div class="mb-3">
+                        <label for="service-image" class="col-form-label">Service image:</label>
+                        <input type="text" class="form-control" id="service-i">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="editServices()">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add service</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="service-id" class="col-form-label">Service id:</label>
-              <input type="text" class="form-control" id="service-id">
-            </div>
-            <div class="mb-3">
-              <label for="service-name" class="col-form-label">Service name:</label>
-              <input type="text" class="form-control" id="service-name">
-            </div>
-            <div class="mb-3">
-              <label for="service-price" class="col-form-label">Service price:</label>
-              <input type="text" class="form-control" id="service-price">
-            </div>
-            <div class="mb-3">
-              <label for="service-image" class="col-form-label">Service image:</label>
-              <input type="text" class="form-control" id="service-image">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="addService()">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add service</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="service-id" class="col-form-label">Service id:</label>
-              <input type="text" class="form-control" id="service-i">
-            </div>
-            <div class="mb-3">
-              <label for="service-name" class="col-form-label">Service name:</label>
-              <input type="text" class="form-control" id="service-n">
-            </div>
-            <div class="mb-3">
-              <label for="service-price" class="col-form-label">Service price:</label>
-              <input type="text" class="form-control" id="service-p">
-            </div>
-            <div class="mb-3">
-              <label for="service-image" class="col-form-label">Service image:</label>
-              <input type="text" class="form-control" id="service-i">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="editServices()">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="top-container">
     <img src="Images/nails.png" alt="Nail image">
     <img src="Images/solarium.png">
