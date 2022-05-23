@@ -25,7 +25,7 @@ const renderService = (services) => {
 }
 //Put updejta resurs na bekendu
 const editServices = () => {
-  const service_ID = document.getElementById('service-i').value;
+  const service_ID = document.getElementById('service-ID').value;
   const service_Name = document.getElementById('service-n').value;
   const service_Price = document.getElementById('service-p').value;
   const service_Image = document.getElementById('service-i').value;
